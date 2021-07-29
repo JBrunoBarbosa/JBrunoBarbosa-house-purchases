@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="main_title_home_style" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="padding_home_style" parent="TextAppearance.AppCompat">
+        <item name="android:paddingTop">@dimen/default_padding</item>
+        <item name="android:paddingStart">@dimen/default_padding</item>
+        <item name="android:paddingEnd">@dimen/default_padding</item>
+    </style>
+
+
+    <style name="btn_numbers_of_products_style" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginTop">@dimen/dimen_16</item>
+        <item name="android:background">@drawable/shape_radius_15</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textSize">@dimen/dimen_15</item>
+    </style>
+
+    <style name="edit_text_add_products_style" parent="TextAppearance.AppCompat">
+        <item name="android:paddingStart">@dimen/dimen_10</item>
+        <item name="android:textColor">@color/primary_color</item>
+        <item name="android:textColorHint">@color/primary_color</item>
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:background">@drawable/shape_radius_15</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+</resources>

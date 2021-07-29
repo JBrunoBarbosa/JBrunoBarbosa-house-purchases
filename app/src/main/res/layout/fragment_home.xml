@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/padding_home_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_home_main_title"
+        style="@style/main_title_home_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home_main_title"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add_product_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_add_product_home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_radius_10"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/btn_add_description"
+        android:src="@drawable/ic_icon_add_btn"
+        app:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_main_title">
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/edit_text_add_products_style"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:hint="@string/et_item_hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_value_1"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:text="@string/add_product_value_1"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_value_2"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/btn_value_2"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:text="@string/add_product_value_4"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_value_3"
+            app:layout_constraintStart_toEndOf="@+id/btn_value_1"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/btn_value_3"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:text="@string/add_product_value_3"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_value_4"
+            app:layout_constraintStart_toEndOf="@+id/btn_value_2"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/btn_value_4"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:text="@string/add_product_value_4"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_value_5"
+            app:layout_constraintStart_toEndOf="@+id/btn_value_3"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/btn_value_5"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:text="@string/add_product_value_5"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_value_6"
+            app:layout_constraintStart_toEndOf="@+id/btn_value_4"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <ImageButton
+            android:id="@+id/btn_value_6"
+            style="@style/btn_numbers_of_products_style"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:src="@drawable/ic_icon_add_btn"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_value_5"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@drawable/shape_radius_15"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/btn_home_add_title"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"
+            app:backgroundTint="@color/secondary_color"
+            app:layout_constraintTop_toBottomOf="@+id/btn_value_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        tools:listitem="@layout/layout_item_product_home" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
