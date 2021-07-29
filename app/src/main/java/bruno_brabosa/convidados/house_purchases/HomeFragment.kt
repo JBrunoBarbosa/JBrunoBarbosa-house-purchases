@@ -1,59 +1,90 @@
 package bruno_brabosa.convidados.house_purchases
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.core.content.ContextCompat
+import bruno_brabosa.convidados.house_purchases.databinding.FragmentHomeBinding
+import bruno_brabosa.convidados.house_purchases.util.extensions.colorControl
+import bruno_brabosa.convidados.house_purchases.util.extensions.onPressedControl
+import bruno_brabosa.convidados.house_purchases.util.extensions.visibilityControl
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private lateinit var _binding: FragmentHomeBinding
+    private val binding get() = _binding
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        setUpLayout()
+        return binding.root
+    }
+
+    private fun setUpLayout() {
+        binding.apply {
+            btnAddProductHome.setOnClickListener {
+                clAddNewProductsHome.visibilityControl()
+                restartControl(btnValue1, btnValue2, btnValue3, btnValue4, btnValue5)
+            }
+
+            btnValue1.apply {
+                setOnClickListener {
+                    onPressedControl(btnValue2, btnValue3, btnValue4, btnValue5, activity)
+                }
+            }
+
+            btnValue2.apply {
+                setOnClickListener {
+                    onPressedControl(btnValue1, btnValue3, btnValue4, btnValue5, activity)
+                }
+            }
+
+            btnValue3.apply {
+                setOnClickListener {
+                    onPressedControl(btnValue2, btnValue1, btnValue4, btnValue5, activity)
+                }
+            }
+
+            btnValue4.apply {
+                setOnClickListener {
+                    onPressedControl(btnValue2, btnValue3, btnValue1, btnValue5, activity)
+                }
+            }
+
+            btnValue5.apply {
+                setOnClickListener {
+                    onPressedControl(btnValue2, btnValue3, btnValue4, btnValue1, activity)
+                }
+            }
+
+            btnValue6.apply {
+                setOnClickListener {
+                    plusControl(btnValue1, btnValue2, btnValue3, btnValue4, btnValue5)
+                }
+            }
+
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    @SuppressLint("SetTextI18n")
+    private fun plusControl(btnValue1: Button, btnValue2: Button, btnValue3: Button, btnValue4: Button, btnValue5: Button){
+        btnValue1.text = "${btnValue1.text.toString().toInt() + 5}"
+        btnValue2.text = "${btnValue2.text.toString().toInt() + 5}"
+        btnValue3.text = "${btnValue3.text.toString().toInt() + 5}"
+        btnValue4.text = "${btnValue4.text.toString().toInt() + 5}"
+        btnValue5.text = "${btnValue5.text.toString().toInt() + 5}"
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun restartControl(btnValue1: Button, btnValue2: Button, btnValue3: Button, btnValue4: Button, btnValue5: Button){
+        btnValue1.text = "1"
+        btnValue2.text = "2"
+        btnValue3.text = "3"
+        btnValue4.text = "4"
+        btnValue5.text = "5"
     }
 }
