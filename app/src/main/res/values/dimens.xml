@@ -9,5 +9,6 @@
     <dimen name="dimen_50">50dp</dimen>
 
     <dimen name="text_15">15sp</dimen>
+    <dimen name="text_14">14sp</dimen>
 
 </resources>
