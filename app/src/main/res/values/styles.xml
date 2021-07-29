@@ -19,7 +19,8 @@
         <item name="android:background">@drawable/shape_radius_15</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">@color/primary_color</item>
-        <item name="android:textSize">@dimen/dimen_15</item>
+        <item name="android:textScaleX">.85</item>
+        <item name="android:textSize">@dimen/text_14</item>
     </style>
 
     <style name="edit_text_add_products_style" parent="TextAppearance.AppCompat">
