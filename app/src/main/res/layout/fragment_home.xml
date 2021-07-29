@@ -33,7 +33,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/cl_add_new_products_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_home_main_title">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/et_product_to_be_add_home"
             style="@style/edit_text_add_products_style"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_40"
@@ -63,7 +63,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btn_value_2"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
             android:id="@+id/btn_value_2"
@@ -74,7 +74,7 @@
             app:backgroundTint="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/btn_value_3"
             app:layout_constraintStart_toEndOf="@+id/btn_value_1"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
             android:id="@+id/btn_value_3"
@@ -85,7 +85,7 @@
             app:backgroundTint="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/btn_value_4"
             app:layout_constraintStart_toEndOf="@+id/btn_value_2"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
             android:id="@+id/btn_value_4"
@@ -96,18 +96,19 @@
             app:backgroundTint="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/btn_value_5"
             app:layout_constraintStart_toEndOf="@+id/btn_value_3"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
             android:id="@+id/btn_value_5"
             style="@style/btn_numbers_of_products_style"
             android:layout_width="@dimen/dimen_50"
             android:layout_height="@dimen/dimen_50"
+            android:textAlignment="center"
             android:text="@string/add_product_value_5"
             app:backgroundTint="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/btn_value_6"
             app:layout_constraintStart_toEndOf="@+id/btn_value_4"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <ImageButton
             android:id="@+id/btn_value_6"
@@ -118,7 +119,7 @@
             app:backgroundTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btn_value_5"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
             android:layout_width="match_parent"
@@ -141,7 +142,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/cl_add_new_products_home"
         tools:listitem="@layout/layout_item_product_home" />
 
 
