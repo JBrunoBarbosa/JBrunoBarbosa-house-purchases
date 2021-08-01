@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="bruno_brabosa.convidados.house_purchases.SplashScreenFragment"
+        android:name="bruno_brabosa.convidados.house_purchases.presentation.SplashScreenFragment"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="bruno_brabosa.convidados.house_purchases.HomeFragment"
+        android:name="bruno_brabosa.convidados.house_purchases.presentation.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
 </navigation>

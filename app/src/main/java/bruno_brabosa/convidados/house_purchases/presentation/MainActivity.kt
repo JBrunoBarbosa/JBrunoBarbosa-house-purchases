@@ -1,7 +1,8 @@
-package bruno_brabosa.convidados.house_purchases
+package bruno_brabosa.convidados.house_purchases.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import bruno_brabosa.convidados.house_purchases.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

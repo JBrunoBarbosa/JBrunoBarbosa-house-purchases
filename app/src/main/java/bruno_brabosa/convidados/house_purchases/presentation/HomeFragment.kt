@@ -1,4 +1,4 @@
-package bruno_brabosa.convidados.house_purchases
+package bruno_brabosa.convidados.house_purchases.presentation
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.core.content.ContextCompat
 import bruno_brabosa.convidados.house_purchases.databinding.FragmentHomeBinding
-import bruno_brabosa.convidados.house_purchases.util.extensions.colorControl
 import bruno_brabosa.convidados.house_purchases.util.extensions.onPressedControl
 import bruno_brabosa.convidados.house_purchases.util.extensions.visibilityControl
 
