@@ -1,13 +1,18 @@
 <resources>
-    <string name="app_name">house-purchases</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Compras de Casa</string>
     <string name="home_main_title">Você possui em casa\nexatamente:</string>
     <string name="btn_add_description">btn_add_product_home</string>
     <string name="et_item_hint">Item</string>
+    <string name="toast_generic_error">Ocorreu um erro tente novamente mais tarde</string>
     <string name="btn_home_add_title">Adicionar</string>
     <string name="add_product_value_1">1</string>
     <string name="add_product_value_2">2</string>
     <string name="add_product_value_3">3</string>
     <string name="add_product_value_4">4</string>
     <string name="add_product_value_5">5</string>
+    <string name="dialog_delete_title">Deletar</string>
+    <string name="remove_dialog_question">Tem certeza que gostaria de remover um \"</string>
+    <string name="remove_all_dialog_question">Tem certeza que gostaria de remover todos \"</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
 </resources>
