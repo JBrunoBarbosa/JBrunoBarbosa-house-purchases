@@ -24,6 +24,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Jetpack Navigation Component](https://developer.android.com/guide/navigation/navigation-getting-started)
 - [Jetpack View Binding](https://developer.android.com/topic/libraries/view-binding)
 - [Jetpack Room](https://developer.android.com/jetpack/androidx/releases/room)
+- [Jetpack Livedata](https://developer.android.com/topic/libraries/architecture/livedata)
 - [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 
 # Imagens do App
