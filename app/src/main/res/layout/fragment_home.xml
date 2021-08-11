@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_color"
-    tools:context=".presentation.HomeFragment">
+    tools:context=".presentation.view.home.HomeFragment">
 
     <TextView
         android:id="@+id/tv_home_main_title"
@@ -122,6 +122,7 @@
             app:layout_constraintTop_toBottomOf="@+id/et_product_to_be_add_home" />
 
         <Button
+            android:id="@+id/btn_add_product"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_50"
             android:layout_marginTop="@dimen/dimen_16"
@@ -133,12 +134,28 @@
             android:textSize="@dimen/text_15"
             app:backgroundTint="@color/secondary_color"
             app:layout_constraintTop_toBottomOf="@+id/btn_value_1" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/la_progress_add_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:visibility="gone"
+            android:elevation="@dimen/text_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_add_product"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/progress" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_products_home"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/dimen_30"
+        android:layout_marginStart="@dimen/dimen_5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
